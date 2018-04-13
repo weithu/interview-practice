@@ -1,4 +1,4 @@
-package longestcommonprefix;
+package problems.longestcommonprefix;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
