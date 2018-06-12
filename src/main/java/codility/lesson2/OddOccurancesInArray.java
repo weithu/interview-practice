@@ -1,11 +1,12 @@
 package codility.lesson2;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
+
+import static org.junit.Assert.assertEquals;
 
 public class OddOccurancesInArray {
 
@@ -65,22 +66,22 @@ public class OddOccurancesInArray {
     @Test
     public void testExample(){
         OddOccurancesInArray o = new OddOccurancesInArray();
-        Assert.assertEquals(o.solution(new int[]{9,3,9,9,7,3,9}), 7);
+        assertEquals(o.solution(new int[]{9,3,9,9,7,3,9}), 7);
     }
     @Test
     public void testExample2(){
         OddOccurancesInArray o = new OddOccurancesInArray();
-        Assert.assertEquals(o.solution(new int[]{1,2,3,4,5,4,3,2,1}), 5);
+        assertEquals(o.solution(new int[]{1,2,3,4,5,4,3,2,1}), 5);
     }
     @Test
     public void testExampleEmpty(){
         OddOccurancesInArray o = new OddOccurancesInArray();
-        Assert.assertEquals(o.solution(new int[]{}), 0);
+        assertEquals(o.solution(new int[]{}), 0);
     }
     @Test
     public void testExampleSingleElement(){
         OddOccurancesInArray o = new OddOccurancesInArray();
-        Assert.assertEquals(o.solution(new int[]{7}), 7);
+        assertEquals(o.solution(new int[]{7}), 7);
     }
 
 

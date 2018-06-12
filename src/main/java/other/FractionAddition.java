@@ -1,9 +1,10 @@
 package other;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import java.util.Objects;
+
+import static org.junit.Assert.assertEquals;
 
 class Fraction{
     private int num;
@@ -70,28 +71,28 @@ public class FractionAddition {
     @Test
     public void testExample1(){
         FractionAddition f = new FractionAddition();
-        Assert.assertEquals(f.add(new Fraction(1,3), new Fraction(1,2)), new Fraction(5,6));
+        assertEquals(f.add(new Fraction(1,3), new Fraction(1,2)), new Fraction(5,6));
     }
 
     @Test
     public void testExample2(){
         FractionAddition f = new FractionAddition();
-        Assert.assertEquals(f.add(new Fraction(1,2), new Fraction(1,2)), new Fraction(2,2));
+        assertEquals(f.add(new Fraction(1,2), new Fraction(1,2)), new Fraction(2,2));
     }
     @Test
     public void testExample3(){
         FractionAddition f = new FractionAddition();
-        Assert.assertEquals(f.add(new Fraction(1,2), new Fraction(1,2)), new Fraction(2,2));
+        assertEquals(f.add(new Fraction(1,2), new Fraction(1,2)), new Fraction(2,2));
     }
     @Test
     public void testExample4(){
         FractionAddition f = new FractionAddition();
-        Assert.assertEquals(f.add(new Fraction(1,5), new Fraction(1,2)), new Fraction(7,10));
+        assertEquals(f.add(new Fraction(1,5), new Fraction(1,2)), new Fraction(7,10));
     }
     @Test
     public void testExample5(){
         FractionAddition f = new FractionAddition();
-        Assert.assertEquals(f.add(new Fraction(1,5), new Fraction(3,5)), new Fraction(4,5));
+        assertEquals(f.add(new Fraction(1,5), new Fraction(3,5)), new Fraction(4,5));
     }
 
     public Fraction reduce(Fraction f){
@@ -108,24 +109,24 @@ public class FractionAddition {
     public void testReduce1(){
         FractionAddition f = new FractionAddition();
         Fraction n = new Fraction(1,2);
-        Assert.assertEquals(f.reduce(n), n);
+        assertEquals(f.reduce(n), n);
     }
     @Test
     public void testReduce2(){
         FractionAddition f = new FractionAddition();
         Fraction n = new Fraction(2,6);
-        Assert.assertEquals(f.reduce(n), new Fraction(1,3));
+        assertEquals(f.reduce(n), new Fraction(1,3));
     }
     @Test
     public void testReduce3(){
         FractionAddition f = new FractionAddition();
         Fraction n = new Fraction(7,21);
-        Assert.assertEquals(f.reduce(n), new Fraction(1,3));
+        assertEquals(f.reduce(n), new Fraction(1,3));
     }
     @Test
     public void testReduce4(){
         FractionAddition f = new FractionAddition();
         Fraction n = new Fraction(21, 7);
-        Assert.assertEquals(f.reduce(n), new Fraction(3,1));
+        assertEquals(f.reduce(n), new Fraction(3,1));
     }
 }

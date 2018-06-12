@@ -2,7 +2,9 @@ package ctci.chapter1;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.Assert;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class Problem1_9_StringRotation {
     /**
@@ -33,19 +35,19 @@ public class Problem1_9_StringRotation {
     }
     @Test
     public void testExample1(){
-       Assert.assertTrue(p.isRotation("waterbottle", "erbottlewat"));
+       assertTrue(p.isRotation("waterbottle", "erbottlewat"));
     }
 
     @Test
     public void testExample2(){
-        Assert.assertFalse(p.isRotation("waterbottle", "ersbottlewat"));
+        assertFalse(p.isRotation("waterbottle", "ersbottlewat"));
     }
     @Test
     public void testExample3(){
-        Assert.assertFalse(p.isRotation("abcdefg", "efghabcd"));
+        assertFalse(p.isRotation("abcdefg", "efghabcd"));
     }
     @Test
     public void testExample4(){
-        Assert.assertTrue(p.isRotation("abcdefg", "efgabcde"));
+        assertTrue(p.isRotation("abcdefg", "efgabcde"));
     }
 }

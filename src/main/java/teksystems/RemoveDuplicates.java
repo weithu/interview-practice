@@ -2,9 +2,10 @@ package teksystems;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.testng.Assert;
 
-public class RemoteDuplicates {
+import static org.junit.Assert.assertEquals;
+
+public class RemoveDuplicates {
     // Remove Duplicates
     // -----------------
     //
@@ -60,34 +61,34 @@ public class RemoteDuplicates {
         System.out.println("output: " + sb.toString());
         return sb.toString();
     }
-    private RemoteDuplicates i;
+    private RemoveDuplicates i;
     @Before
     public void setUp(){
-        i = new RemoteDuplicates();
+        i = new RemoveDuplicates();
     }
 
     @Test
     public void testExample(){
-        Assert.assertEquals(i.removeDuplicates("AbraCadABraAlakAzam"), "AbrCdlkzm");
+        assertEquals(i.removeDuplicates("AbraCadABraAlakAzam"), "AbrCdlkzm");
     }
 
     @Test
     public void testAllIncludedLower(){
-        Assert.assertEquals(i.removeDuplicates("abcdefghijklmnopqrstuvwxyz"), "abcdefghijklmnopqrstuvwxyz");
+        assertEquals(i.removeDuplicates("abcdefghijklmnopqrstuvwxyz"), "abcdefghijklmnopqrstuvwxyz");
     }
 
     @Test
     public void testAllIncludedUpper(){
-        Assert.assertEquals(i.removeDuplicates("ABCDEFGHIJKLMNOPQRSTUVWXYZ"), "ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+        assertEquals(i.removeDuplicates("ABCDEFGHIJKLMNOPQRSTUVWXYZ"), "ABCDEFGHIJKLMNOPQRSTUVWXYZ");
     }
 
     @Test
     public void testAllIncludedMixed(){
-        Assert.assertEquals(i.removeDuplicates("abCdefghiJklmnOpqrStuvwXyZ"), "abCdefghiJklmnOpqrStuvwXyZ");
+        assertEquals(i.removeDuplicates("abCdefghiJklmnOpqrStuvwXyZ"), "abCdefghiJklmnOpqrStuvwXyZ");
     }
 
     @Test
     public void testMixIncludedMixed(){
-        Assert.assertEquals(i.removeDuplicates("aAbCdefXghiJklmMMnOpqrStuvwXyMZ"), "abCdefXghiJklmnOpqrStuvwyZ");
+        assertEquals(i.removeDuplicates("aAbCdefXghiJklmMMnOpqrStuvwXyMZ"), "abCdefXghiJklmnOpqrStuvwyZ");
     }
 }

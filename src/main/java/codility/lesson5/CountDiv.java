@@ -1,7 +1,8 @@
 package codility.lesson5;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class CountDiv {
     /**
@@ -45,34 +46,34 @@ public class CountDiv {
     @Test
     public void testExample1(){
         CountDiv c = new CountDiv();
-        Assert.assertEquals(c.solution(6, 11, 2), 3);
+        assertEquals(c.solution(6, 11, 2), 3);
     }
 
     @Test
     public void testExample2(){
         CountDiv c = new CountDiv();
-        Assert.assertEquals(c.solution(0, 11, 2), 6);
+        assertEquals(c.solution(0, 11, 2), 6);
     }
     @Test
     public void testExample3(){
         CountDiv c = new CountDiv();
-        Assert.assertEquals(c.solution(1, 1, 11), 0);
+        assertEquals(c.solution(1, 1, 11), 0);
     }
     @Test
     public void testExample4(){
         CountDiv c = new CountDiv();
-        Assert.assertEquals(c.solution(0, 0, 11), 1);
+        assertEquals(c.solution(0, 0, 11), 1);
     }
 
     @Test
     public void testExample5(){
         CountDiv c = new CountDiv();
-        Assert.assertEquals(c.solution(0, 1, 11), 1);
+        assertEquals(c.solution(0, 1, 11), 1);
     }
 
     @Test
     public void testExample6(){
         CountDiv c = new CountDiv();
-        Assert.assertEquals(c.solution(11, 46, 17), 2);
+        assertEquals(c.solution(11, 46, 17), 2);
     }
 }

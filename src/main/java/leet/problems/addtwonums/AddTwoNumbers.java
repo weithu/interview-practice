@@ -1,7 +1,8 @@
 package leet.problems.addtwonums;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class AddTwoNumbers {
     /**
@@ -99,9 +100,9 @@ public class AddTwoNumbers {
 
         AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
         ListNode a = addTwoNumbers.addTwoNumbers(l2, l5);
-        Assert.assertEquals(a.val, 7);
-        Assert.assertEquals(a.next.val, 0);
-        Assert.assertEquals(a.next.next.val, 8);
+        assertEquals(a.val, 7);
+        assertEquals(a.next.val, 0);
+        assertEquals(a.next.next.val, 8);
     }
 
     @Test
@@ -126,9 +127,9 @@ public class AddTwoNumbers {
 
         AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
         ListNode a = addTwoNumbers.addTwoNumbers(l2, l5);
-        Assert.assertEquals(a.val, 7);
-        Assert.assertEquals(a.next.val, 0);
-        Assert.assertEquals(a.next.next.val, 5);
+        assertEquals(a.val, 7);
+        assertEquals(a.next.val, 0);
+        assertEquals(a.next.next.val, 5);
     }
 
 
@@ -141,7 +142,7 @@ public class AddTwoNumbers {
 
         AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
         ListNode a = addTwoNumbers.addTwoNumbers(l1, l2);
-        Assert.assertEquals(a.val, 0);
-        Assert.assertEquals(a.next.val, 1);
+        assertEquals(a.val, 0);
+        assertEquals(a.next.val, 1);
     }
 }

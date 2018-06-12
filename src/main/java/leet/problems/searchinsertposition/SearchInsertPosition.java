@@ -1,7 +1,8 @@
 package leet.problems.searchinsertposition;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class SearchInsertPosition {
     /**
@@ -84,21 +85,21 @@ public class SearchInsertPosition {
     @Test
     public void existsUpperHalf(){
         SearchInsertPosition sip = new SearchInsertPosition();
-        Assert.assertEquals(sip.searchInsert(new int[]{1,3,5,6}, 5), 2);
+        assertEquals(sip.searchInsert(new int[]{1,3,5,6}, 5), 2);
     }
     @Test
     public void doesNotExistsLowerHalf(){
         SearchInsertPosition sip = new SearchInsertPosition();
-        Assert.assertEquals(sip.searchInsert(new int[]{1,3,5,6}, 2), 1);
+        assertEquals(sip.searchInsert(new int[]{1,3,5,6}, 2), 1);
     }
     @Test
     public void doesNotExistsMax(){
         SearchInsertPosition sip = new SearchInsertPosition();
-        Assert.assertEquals(sip.searchInsert(new int[]{1,3,5,6}, 7), 4);
+        assertEquals(sip.searchInsert(new int[]{1,3,5,6}, 7), 4);
     }
     @Test
     public void doesNotExistsMin(){
         SearchInsertPosition sip = new SearchInsertPosition();
-        Assert.assertEquals(sip.searchInsert(new int[]{1,3,5,6}, 0), 0);
+        assertEquals(sip.searchInsert(new int[]{1,3,5,6}, 0), 0);
     }
 }

@@ -1,7 +1,8 @@
 package codility.lesson4;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
+
+import static org.junit.Assert.assertArrayEquals;
 
 public class MaxCounters {
     /**
@@ -130,6 +131,6 @@ public class MaxCounters {
     @Test
     public void testExample(){
         MaxCounters m = new MaxCounters();
-        Assert.assertEquals(m.solution(5, new int[]{3,4,4,6,1,4,4}), new int[]{3, 2, 2, 4, 2});
+        assertArrayEquals(m.solution(5, new int[]{3,4,4,6,1,4,4}), new int[]{3, 2, 2, 4, 2});
     }
 }

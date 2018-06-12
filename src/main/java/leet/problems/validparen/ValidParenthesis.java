@@ -1,11 +1,13 @@
 package leet.problems.validparen;
 
-import org.junit.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class ValidParenthesis {
     /**
@@ -82,35 +84,35 @@ public class ValidParenthesis {
     @Test
     public void testCaseTrue_simpleSingleCase(){
         ValidParenthesis vp = new ValidParenthesis();
-        Assert.assertTrue(vp.isValid("()"));
+        assertTrue(vp.isValid("()"));
 
     }
 
     @Test
     public void testCaseTrue_allMatchedSingle(){
         ValidParenthesis vp = new ValidParenthesis();
-        Assert.assertTrue(vp.isValid("()[]{}"));
+        assertTrue(vp.isValid("()[]{}"));
 
     }
 
     @Test
     public void testCaseFalse_notMatched(){
         ValidParenthesis vp = new ValidParenthesis();
-        Assert.assertFalse(vp.isValid( "(]"));
+        assertFalse(vp.isValid( "(]"));
 
     }
 
     @Test
     public void testCaseFalse_notMatchedMultiple(){
         ValidParenthesis vp = new ValidParenthesis();
-        Assert.assertFalse(vp.isValid("([)]"));
+        assertFalse(vp.isValid("([)]"));
 
     }
 
     @Test
     public void testCaseTrue_Nested(){
         ValidParenthesis vp = new ValidParenthesis();
-        Assert.assertTrue(vp.isValid("{[]}"));
+        assertTrue(vp.isValid("{[]}"));
 
     }
 }

@@ -2,7 +2,8 @@ package csdojo.dynamic.programming;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.testng.Assert;
+
+import static org.junit.Assert.*;
 
 public class FibonacciSequenceMem {
 
@@ -30,26 +31,26 @@ public class FibonacciSequenceMem {
 
     @Test
     public void testFib1(){
-        Assert.assertEquals(fs.fib(1, new int[26]), 1);
+        assertEquals(fs.fib(1, new int[26]), 1);
     }
     @Test
     public void testFib2(){
-        Assert.assertEquals(fs.fib(2, new int[26]), 1);
+        assertEquals(fs.fib(2, new int[26]), 1);
     }
     @Test
     public void testFib3(){
-        Assert.assertEquals(fs.fib(3, new int[26]), 2);
+        assertEquals(fs.fib(3, new int[26]), 2);
     }
     @Test
     public void testFib4(){
-        Assert.assertEquals(fs.fib(4, new int[26]), 3);
+        assertEquals(fs.fib(4, new int[26]), 3);
     }
     @Test
     public void testFib10(){
-        Assert.assertEquals(fs.fib(10, new int[26]), 55);
+        assertEquals(fs.fib(10, new int[26]), 55);
     }
     @Test
     public void testFib20(){
-        Assert.assertEquals(fs.fib(20, new int[26]), 6765);
+        assertEquals(fs.fib(20, new int[26]), 6765);
     }
 }

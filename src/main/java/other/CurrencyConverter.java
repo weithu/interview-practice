@@ -1,10 +1,11 @@
 package other;
 
-import org.testng.Assert;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.util.Stack;
+
+import static org.junit.Assert.assertEquals;
 
 public class CurrencyConverter {
 
@@ -57,38 +58,38 @@ public class CurrencyConverter {
 
     private CurrencyConverter cc;
 
-    @BeforeSuite
+    @Before
     public void before(){
         cc = new CurrencyConverter();
     }
 
     @Test
     public void testSingleDigitCase(){
-        Assert.assertEquals(this.cc.convert(9), "0.09");
+        assertEquals(this.cc.convert(9), "0.09");
     }
 
     @Test
     public void testTwoDigitCase(){
-        Assert.assertEquals(this.cc.convert(99), "0.99");
+        assertEquals(this.cc.convert(99), "0.99");
     }
 
     @Test
     public void testBaseCase(){
-        Assert.assertEquals(this.cc.convert(123456), "1,234.56");
+        assertEquals(this.cc.convert(123456), "1,234.56");
     }
 
     @Test
     public void testBaseCaseNeg(){
-        Assert.assertEquals(this.cc.convert(-123456), "-1,234.56");
+        assertEquals(this.cc.convert(-123456), "-1,234.56");
     }
 
     @Test
     public void testLarger(){
-        Assert.assertEquals(this.cc.convert(123456789), "1,234,567.89");
+        assertEquals(this.cc.convert(123456789), "1,234,567.89");
     }
 
     @Test
     public void testLargerZeroPadding(){
-        Assert.assertEquals(this.cc.convert(102400789), "1,024,007.89");
+        assertEquals(this.cc.convert(102400789), "1,024,007.89");
     }
 }

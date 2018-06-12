@@ -2,7 +2,8 @@ package csdojo.practice;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.Assert;
+
+import static org.junit.Assert.assertEquals;
 
 public class FirstRecurringChar {
     /**
@@ -33,30 +34,30 @@ public class FirstRecurringChar {
     }
     @Test
     public void testExample1(){
-        Assert.assertEquals(f.findFirstRecurring("ABCA"), Character.valueOf('A'));
+        assertEquals(f.findFirstRecurring("ABCA"), Character.valueOf('A'));
     }
     @Test
     public void testExample2(){
-        Assert.assertEquals(f.findFirstRecurring("BCABA"), Character.valueOf('B'));
+        assertEquals(f.findFirstRecurring("BCABA"), Character.valueOf('B'));
     }
     @Test
     public void testExample3(){
-        Assert.assertEquals(f.findFirstRecurring("ABC"), null);
+        assertEquals(f.findFirstRecurring("ABC"), null);
     }
     @Test
     public void testLowerAndUpper(){
-        Assert.assertEquals(f.findFirstRecurring("ABCabcC"), Character.valueOf('C'));
+        assertEquals(f.findFirstRecurring("ABCabcC"), Character.valueOf('C'));
     }
     @Test
     public void testUpperAndLower(){
-        Assert.assertEquals(f.findFirstRecurring("ABCabcb"), Character.valueOf('b'));
+        assertEquals(f.findFirstRecurring("ABCabcb"), Character.valueOf('b'));
     }
     @Test
     public void testEdgeConditionsNull(){
-        Assert.assertEquals(f.findFirstRecurring(null), null);
+        assertEquals(f.findFirstRecurring(null), null);
     }
     @Test
     public void testEdgeConditionsEmpty(){
-        Assert.assertEquals(f.findFirstRecurring(""), null);
+        assertEquals(f.findFirstRecurring(""), null);
     }
 }

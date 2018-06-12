@@ -1,9 +1,10 @@
 package leet.articles.stackqueue;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import java.util.Stack;
+
+import static org.junit.Assert.*;
 
 public class StackQueue {
     /**
@@ -67,9 +68,9 @@ public class StackQueue {
         sq.push(1);
         sq.push(2);
         sq.push(3);
-        Assert.assertEquals(sq.pop(), 1);
-        Assert.assertEquals(sq.pop(), 2);
-        Assert.assertEquals(sq.pop(), 3);
+        assertEquals(sq.pop(), 1);
+        assertEquals(sq.pop(), 2);
+        assertEquals(sq.pop(), 3);
     }
 
     @Test
@@ -78,25 +79,25 @@ public class StackQueue {
         sq.push(1);
         sq.push(2);
         sq.push(3);
-        Assert.assertEquals(sq.peek(), 1);
-        Assert.assertEquals(sq.pop(), 1);
-        Assert.assertEquals(sq.peek(), 2);
+        assertEquals(sq.peek(), 1);
+        assertEquals(sq.pop(), 1);
+        assertEquals(sq.peek(), 2);
 
         sq.push(7);
-        Assert.assertEquals(sq.peek(), 2);
+        assertEquals(sq.peek(), 2);
     }
 
     @Test
     public void testEmpty(){
         StackQueue sq = new StackQueue();
-        Assert.assertTrue(sq.isEmpty());
+        assertTrue(sq.isEmpty());
         sq.push(1);
         sq.push(2);
         sq.push(3);
-        Assert.assertFalse(sq.isEmpty());
+        assertFalse(sq.isEmpty());
         sq.pop();
         sq.pop();
         sq.pop();
-        Assert.assertTrue(sq.isEmpty());
+        assertTrue(sq.isEmpty());
     }
 }

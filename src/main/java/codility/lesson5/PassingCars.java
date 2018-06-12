@@ -1,7 +1,8 @@
 package codility.lesson5;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class PassingCars {
     /**
@@ -89,43 +90,43 @@ public class PassingCars {
     @Test
     public void testExample1(){
         PassingCars p = new PassingCars();
-        Assert.assertEquals(p.solution(new int[]{0,1,0,1,1}), 5);
+        assertEquals(p.solution(new int[]{0,1,0,1,1}), 5);
     }
 
     @Test
     public void testExample2(){
         PassingCars p = new PassingCars();
-        Assert.assertEquals(p.solution(new int[]{1}),0);
+        assertEquals(p.solution(new int[]{1}),0);
     }
     @Test
     public void testExample3(){
         PassingCars p = new PassingCars();
-        Assert.assertEquals(p.solution(new int[]{1,1}),0);
+        assertEquals(p.solution(new int[]{1,1}),0);
     }
     @Test
     public void testExample4(){
         PassingCars p = new PassingCars();
-        Assert.assertEquals(p.solution(new int[]{0,0}),0);
+        assertEquals(p.solution(new int[]{0,0}),0);
     }
     @Test
     public void testExample5(){
         PassingCars p = new PassingCars();
-        Assert.assertEquals(p.solution(new int[]{1,0}),0);
+        assertEquals(p.solution(new int[]{1,0}),0);
     }
     @Test
     public void testExample6(){
         PassingCars p = new PassingCars();
-        Assert.assertEquals(p.solution(new int[]{0,1}),1);
+        assertEquals(p.solution(new int[]{0,1}),1);
     }
     @Test
     public void testExample7(){
         PassingCars p = new PassingCars();
-        Assert.assertEquals(p.solution(new int[]{1,0,1}),1);
+        assertEquals(p.solution(new int[]{1,0,1}),1);
     }
     @Test
     public void testExample8(){
         PassingCars p = new PassingCars();
-        Assert.assertEquals(p.solution(new int[]{0,1,0,1}),3);
+        assertEquals(p.solution(new int[]{0,1,0,1}),3);
     }
 }
 

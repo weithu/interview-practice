@@ -1,12 +1,11 @@
 package leet.problems.longestsubstring;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
+
+import static org.junit.Assert.assertEquals;
 
 public class LongestSubstring {
     /**
@@ -49,30 +48,30 @@ public class LongestSubstring {
     @Test
     public void testBasecase1(){
         LongestSubstring ls = new LongestSubstring();
-        Assert.assertEquals(ls.lengthOfLongestSubstring("abcabcbb"), 3);
+        assertEquals(ls.lengthOfLongestSubstring("abcabcbb"), 3);
     }
 
     @Test
     public void testBasecase2(){
         LongestSubstring ls = new LongestSubstring();
-        Assert.assertEquals(ls.lengthOfLongestSubstring("bbbbb"), 1);
+        assertEquals(ls.lengthOfLongestSubstring("bbbbb"), 1);
     }
 
     @Test
     public void testBasecase3(){
         LongestSubstring ls = new LongestSubstring();
-        Assert.assertEquals(ls.lengthOfLongestSubstring("pwwkew"), 3);
+        assertEquals(ls.lengthOfLongestSubstring("pwwkew"), 3);
     }
 
     @Test
     public void testCase1(){
         LongestSubstring ls = new LongestSubstring();
-        Assert.assertEquals(ls.lengthOfLongestSubstring("aab"), 2);
+        assertEquals(ls.lengthOfLongestSubstring("aab"), 2);
     }
 
     @Test
     public void testCase2(){
         LongestSubstring ls = new LongestSubstring();
-        Assert.assertEquals(ls.lengthOfLongestSubstring("dvdf"), 3);
+        assertEquals(ls.lengthOfLongestSubstring("dvdf"), 3);
     }
 }

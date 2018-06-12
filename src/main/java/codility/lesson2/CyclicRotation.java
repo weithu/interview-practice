@@ -1,7 +1,8 @@
 package codility.lesson2;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
+
+import static org.junit.Assert.assertArrayEquals;
 
 public class CyclicRotation {
     /**
@@ -70,22 +71,22 @@ public class CyclicRotation {
     @Test
     public void testEx1(){
         CyclicRotation c = new CyclicRotation();
-        Assert.assertEquals(c.solution(new int[]{3, 8, 9, 7, 6}, 3), new int[]{9, 7, 6, 3, 8});
+        assertArrayEquals(c.solution(new int[]{3, 8, 9, 7, 6}, 3), new int[]{9, 7, 6, 3, 8});
     }
     @Test
     public void testEdgeEmpty(){
         CyclicRotation c = new CyclicRotation();
-        Assert.assertEquals(c.solution(new int[]{}, 3), new int[]{});
+        assertArrayEquals(c.solution(new int[]{}, 3), new int[]{});
     }
     @Test
     public void testKGtSize(){
         CyclicRotation c = new CyclicRotation();
-        Assert.assertEquals(c.solution(new int[]{3, 8, 9, 7, 6}, 6), new int[]{6, 3, 8, 9, 7});
+        assertArrayEquals(c.solution(new int[]{3, 8, 9, 7, 6}, 6), new int[]{6, 3, 8, 9, 7});
     }
     @Test
     public void testEqualSize(){
         CyclicRotation c = new CyclicRotation();
-        Assert.assertEquals(c.solution(new int[]{3, 8, 9, 7, 6}, 5), new int[]{3, 8, 9, 7, 6});
+        assertArrayEquals(c.solution(new int[]{3, 8, 9, 7, 6}, 5), new int[]{3, 8, 9, 7, 6});
     }
 
 }

@@ -1,7 +1,8 @@
 package leet.problems.twosum;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
+
+import static org.junit.Assert.assertArrayEquals;
 
 public class TwoSum {
     /**
@@ -39,21 +40,21 @@ public class TwoSum {
     }
 
     @Test
-    public static void baseTest(){
+    public void baseTest(){
         TwoSum twoSum = new TwoSum();
-        Assert.assertEquals(twoSum.twoSum(new int[]{2,7,11,15}, 9), new int[]{0,1});
+        assertArrayEquals(twoSum.twoSum(new int[]{2,7,11,15}, 9), new int[]{0,1});
     }
 
     @Test
-    public static void scatteredTest(){
+    public void scatteredTest(){
         TwoSum twoSum = new TwoSum();
-        Assert.assertEquals(twoSum.twoSum(new int[]{2,4,7,11,15}, 22), new int[]{2,4});
+        assertArrayEquals(twoSum.twoSum(new int[]{2,4,7,11,15}, 22), new int[]{2,4});
     }
 
     @Test
-    public static void multipleAnswersTest(){
+    public void multipleAnswersTest(){
         TwoSum twoSum = new TwoSum();
-        Assert.assertEquals(twoSum.twoSum(new int[]{2,4,5,6,7,15}, 11), new int[]{1,4});
+        assertArrayEquals(twoSum.twoSum(new int[]{2,4,5,6,7,15}, 11), new int[]{1,4});
     }
 
 }

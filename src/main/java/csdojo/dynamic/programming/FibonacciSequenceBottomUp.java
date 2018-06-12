@@ -1,8 +1,8 @@
 package csdojo.dynamic.programming;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.testng.Assert;
 
 public class FibonacciSequenceBottomUp {
     public int fib(int n){

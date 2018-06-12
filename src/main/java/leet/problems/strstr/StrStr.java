@@ -1,7 +1,8 @@
 package leet.problems.strstr;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class StrStr {
     /**
@@ -54,11 +55,11 @@ public class StrStr {
     @Test
     public void testExample1(){
         StrStr s = new StrStr();
-        Assert.assertEquals(s.strStr("hello", "ll"), 2);
+        assertEquals(s.strStr("hello", "ll"), 2);
     }
     @Test
     public void testExample2(){
         StrStr s = new StrStr();
-        Assert.assertEquals(s.strStr("aaaa", "bba"), -1);
+        assertEquals(s.strStr("aaaa", "bba"), -1);
     }
 }

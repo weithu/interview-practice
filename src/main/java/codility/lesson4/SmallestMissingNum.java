@@ -1,9 +1,10 @@
 package codility.lesson4;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import java.util.Arrays;
+
+import static org.junit.Assert.assertEquals;
 
 public class SmallestMissingNum {
 
@@ -57,41 +58,41 @@ public class SmallestMissingNum {
     @Test
     public void testw0(){
         SmallestMissingNum s = new SmallestMissingNum();
-        Assert.assertEquals(s.solution(new int[]{1,2,3}), 4);
+        assertEquals(s.solution(new int[]{1,2,3}), 4);
     }
 
     @Test
     public void test0(){
         SmallestMissingNum s = new SmallestMissingNum();
-        Assert.assertEquals(s.solution(new int[]{-1,2,3,5}), 1);
+        assertEquals(s.solution(new int[]{-1,2,3,5}), 1);
     }
 
     @Test
     public void test00(){
         SmallestMissingNum s = new SmallestMissingNum();
-        Assert.assertEquals(s.solution(new int[]{-1,-2,-3,-5}), 1);
+        assertEquals(s.solution(new int[]{-1,-2,-3,-5}), 1);
     }
     @Test
     public void test1(){
         SmallestMissingNum s = new SmallestMissingNum();
-        Assert.assertEquals(s.solution(new int[]{1,2,3,5}), 4);
+        assertEquals(s.solution(new int[]{1,2,3,5}), 4);
     }
 
     @Test
     public void test2(){
         SmallestMissingNum s = new SmallestMissingNum();
-        Assert.assertEquals(s.solution(new int[]{}), 1);
+        assertEquals(s.solution(new int[]{}), 1);
     }
 
     @Test
     public void test3(){
         SmallestMissingNum s = new SmallestMissingNum();
-        Assert.assertEquals(s.solution(new int[]{-1}), 1);
+        assertEquals(s.solution(new int[]{-1}), 1);
     }
 
     @Test
     public void test4(){
         SmallestMissingNum s = new SmallestMissingNum();
-        Assert.assertEquals(s.solution(new int[]{1}), 2);
+        assertEquals(s.solution(new int[]{1}), 2);
     }
 }

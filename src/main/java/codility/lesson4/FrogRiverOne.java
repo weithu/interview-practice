@@ -1,10 +1,11 @@
 package codility.lesson4;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import static org.junit.Assert.assertEquals;
 
 public class FrogRiverOne {
     /**
@@ -74,6 +75,6 @@ public class FrogRiverOne {
     @Test
     public void testExample(){
         FrogRiverOne f = new FrogRiverOne();
-        Assert.assertEquals(f.solution(5,new int[]{1,3,1,4,2,3,5,4}), 6);
+        assertEquals(f.solution(5,new int[]{1,3,1,4,2,3,5,4}), 6);
     }
 }

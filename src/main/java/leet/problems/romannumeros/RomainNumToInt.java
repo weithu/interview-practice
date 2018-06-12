@@ -1,10 +1,11 @@
 package leet.problems.romannumeros;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import static org.junit.Assert.assertEquals;
 
 public class RomainNumToInt {
     /**
@@ -65,19 +66,19 @@ public class RomainNumToInt {
     public void test1996(){
 
         RomainNumToInt r = new RomainNumToInt();
-        Assert.assertEquals(r.romanToInt("MCMXCVI"), 1996);
+        assertEquals(r.romanToInt("MCMXCVI"), 1996);
     }
 
     @Test
     public void test30(){
         RomainNumToInt r = new RomainNumToInt();
-        Assert.assertEquals(r.romanToInt("XXX"), 30);
+        assertEquals(r.romanToInt("XXX"), 30);
     }
 
     @Test
     public void test4(){
         RomainNumToInt r = new RomainNumToInt();
-        Assert.assertEquals(r.romanToInt("IV"), 4);
+        assertEquals(r.romanToInt("IV"), 4);
     }
 
 }

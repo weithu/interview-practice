@@ -1,7 +1,8 @@
 package leet.problems.mediantwosortedarray;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class MedianSortedArrays {
     /**
@@ -64,13 +65,13 @@ public class MedianSortedArrays {
     @Test
     public void baseCase1Test(){
         MedianSortedArrays msa = new MedianSortedArrays();
-        Assert.assertEquals(msa.findMedianSortedArrays(new int[]{1,3}, new int[]{2}), 2.0);
+        assertEquals(msa.findMedianSortedArrays(new int[]{1,3}, new int[]{2}), 2.0, 0.001);
     }
 
 
     @Test
     public void baseCase2Test(){
         MedianSortedArrays msa = new MedianSortedArrays();
-        Assert.assertEquals(msa.findMedianSortedArrays(new int[]{1,2}, new int[]{3,4}), 2.5);
+        assertEquals(msa.findMedianSortedArrays(new int[]{1,2}, new int[]{3,4}), 2.5, 0.001);
     }
 }

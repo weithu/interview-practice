@@ -1,7 +1,8 @@
 package leet.problems.zigzag;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class ZigZag {
     /**
@@ -40,7 +41,7 @@ public class ZigZag {
     @Test
     public void exampleTest(){
         ZigZag z = new ZigZag();
-        Assert.assertEquals(z.convert("PAYPALISHIRING", 3), "PAHNAPLSIIGYIR");
+        assertEquals(z.convert("PAYPALISHIRING", 3), "PAHNAPLSIIGYIR");
     }
 
 }

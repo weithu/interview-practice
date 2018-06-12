@@ -1,9 +1,10 @@
 package codility.lesson4;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import java.util.Arrays;
+
+import static org.junit.Assert.assertEquals;
 
 public class PermCheck {
     /**
@@ -80,26 +81,26 @@ public class PermCheck {
     @Test
     public void testFailedSample(){
         PermCheck p = new PermCheck();
-        Assert.assertEquals(p.solution(new int[]{1,4,1}), 0);
+        assertEquals(p.solution(new int[]{1,4,1}), 0);
     }
     @Test
     public void testExample(){
         PermCheck p = new PermCheck();
-        Assert.assertEquals(p.solution(new int[]{1,2,3,4,5}), 1);
+        assertEquals(p.solution(new int[]{1,2,3,4,5}), 1);
     }
     @Test
     public void testExample2(){
         PermCheck p = new PermCheck();
-        Assert.assertEquals(p.solution(new int[]{1,2,3,4,5,8}), 0);
+        assertEquals(p.solution(new int[]{1,2,3,4,5,8}), 0);
     }
     @Test
     public void testExample3(){
         PermCheck p = new PermCheck();
-        Assert.assertEquals(p.solution(new int[]{1}), 1);
+        assertEquals(p.solution(new int[]{1}), 1);
     }
     @Test
     public void testExample4(){
         PermCheck p = new PermCheck();
-        Assert.assertEquals(p.solution(new int[]{2}), 0);
+        assertEquals(p.solution(new int[]{2}), 0);
     }
 }

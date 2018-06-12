@@ -1,9 +1,10 @@
 package codility.lesson3;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import java.util.Arrays;
+
+import static org.junit.Assert.*;
 
 public class PermMissingElem {
     /**
@@ -65,24 +66,24 @@ public class PermMissingElem {
     @Test
     public void testExample(){
         PermMissingElem p = new PermMissingElem();
-        Assert.assertEquals(p.solution(new int[]{2,3,1,5}), 4);
+        assertEquals(p.solution(new int[]{2,3,1,5}), 4);
     }
 
     @Test
     public void testEmpty(){
         PermMissingElem p = new PermMissingElem();
-        Assert.assertEquals(p.solution(new int[]{}), 1);
+        assertEquals(p.solution(new int[]{}), 1);
     }
 
     @Test
     public void testSingle(){
         PermMissingElem p = new PermMissingElem();
-        Assert.assertEquals(p.solution(new int[]{1}), 2);
+        assertEquals(p.solution(new int[]{1}), 2);
     }
 
     @Test
     public void testSingleLong(){
         PermMissingElem p = new PermMissingElem();
-        Assert.assertEquals(p.solution(new int[]{1,2,3,4,5,6,8}), 7);
+        assertEquals(p.solution(new int[]{1,2,3,4,5,6,8}), 7);
     }
 }

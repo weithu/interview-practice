@@ -1,7 +1,9 @@
 package codility.lesson1;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Assert;
+import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 /**
  *
@@ -49,24 +51,24 @@ public class BinaryGap {
     @Test
     public void test1041(){
         BinaryGap b = new BinaryGap();
-        Assert.assertEquals( b.solution(1041), 5);
+        assertEquals( b.solution(1041), 5);
     }
 
     @Test
     public void test9(){
         BinaryGap b = new BinaryGap();
-        Assert.assertEquals( b.solution(9), 2);
+        assertEquals( b.solution(9), 2);
     }
     @Test
     public void test529(){
         BinaryGap b = new BinaryGap();
-        Assert.assertEquals( b.solution(529), 4);
+        assertEquals( b.solution(529), 4);
     }
 
     @Test
     public void testMax(){
         BinaryGap b = new BinaryGap();
-        Assert.assertEquals(b.solution(Integer.MAX_VALUE), 0);
+        assertEquals(b.solution(Integer.MAX_VALUE), 0);
     }
 
 

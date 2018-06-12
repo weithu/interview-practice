@@ -1,9 +1,10 @@
 package codility.lesson7;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import java.util.Stack;
+
+import static org.junit.Assert.assertEquals;
 
 public class StoneWall {
     /**
@@ -57,6 +58,6 @@ public class StoneWall {
     @Test
     public void example1(){
         StoneWall s = new StoneWall();
-        Assert.assertEquals(s.solution(new int[]{8,8,5,7,9,8,7,4,8}), 7);
+        assertEquals(s.solution(new int[]{8,8,5,7,9,8,7,4,8}), 7);
     }
 }

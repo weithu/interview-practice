@@ -1,9 +1,8 @@
 package leet.problems.longestcommonprefix;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import java.util.TreeSet;
+import static org.junit.Assert.assertEquals;
 
 public class LongestPrefix {
 
@@ -37,13 +36,13 @@ public class LongestPrefix {
     @Test
     public void testSimpleCase(){
         LongestPrefix lp = new LongestPrefix();
-        Assert.assertEquals(lp.longestCommonPrefix(new String[]{"abcxdf", "abdef", "abaa", "ab", "abcv"}), "ab");
+        assertEquals(lp.longestCommonPrefix(new String[]{"abcxdf", "abdef", "abaa", "ab", "abcv"}), "ab");
     }
 
 
     @Test
     public void testSubsetCase(){
         LongestPrefix lp = new LongestPrefix();
-        Assert.assertEquals(lp.longestCommonPrefix(new String[]{"abcxdf", "abdef", "abaa", "abdd", "abcv"}), "ab");
+        assertEquals(lp.longestCommonPrefix(new String[]{"abcxdf", "abdef", "abaa", "abdd", "abcv"}), "ab");
     }
 }

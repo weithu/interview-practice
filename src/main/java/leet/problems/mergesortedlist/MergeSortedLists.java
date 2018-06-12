@@ -1,7 +1,9 @@
 package leet.problems.mergesortedlist;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 public class MergeSortedLists {
     /**
@@ -91,20 +93,20 @@ public class MergeSortedLists {
         l5.next=l6;
 
         ListNode r = msl.mergeTwoLists(l1, l4);
-        Assert.assertEquals(r.val, 1);
+        assertEquals(r.val, 1);
         r = r.next;
 
-        Assert.assertEquals(r.val, 1);
+        assertEquals(r.val, 1);
         r = r.next;
-        Assert.assertEquals(r.val, 2);
+        assertEquals(r.val, 2);
         r = r.next;
-        Assert.assertEquals(r.val, 3);
+        assertEquals(r.val, 3);
         r = r.next;
-        Assert.assertEquals(r.val, 4);
+        assertEquals(r.val, 4);
         r = r.next;
-        Assert.assertEquals(r.val, 4);
+        assertEquals(r.val, 4);
         r = r.next;
-        Assert.assertNull(r);
+        assertNull(r);
 
     }
 }

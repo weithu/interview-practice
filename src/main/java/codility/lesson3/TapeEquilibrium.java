@@ -1,7 +1,8 @@
 package codility.lesson3;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class TapeEquilibrium {
     /**
@@ -71,39 +72,39 @@ public class TapeEquilibrium {
     @Test
     public void testExample00(){
         TapeEquilibrium t = new TapeEquilibrium();
-        Assert.assertEquals(t.solution(new int[]{-10, -20, -30, -40, 100}), 20);//-10
+        assertEquals(t.solution(new int[]{-10, -20, -30, -40, 100}), 20);//-10
     }
     @Test
     public void testExample(){
         TapeEquilibrium t = new TapeEquilibrium();
-        Assert.assertEquals(t.solution(new int[]{3,1,2,4,3}), 1);
+        assertEquals(t.solution(new int[]{3,1,2,4,3}), 1);
     }
     @Test
     public void testExample2(){
         TapeEquilibrium t = new TapeEquilibrium();
-        Assert.assertEquals(t.solution(new int[]{7,1,2,4,3}), 1); //3, 1, 3, 11
+        assertEquals(t.solution(new int[]{7,1,2,4,3}), 1); //3, 1, 3, 11
     }
     @Test
     public void testExample3(){
         TapeEquilibrium t = new TapeEquilibrium();
-        Assert.assertEquals(t.solution(new int[]{4,6,2,-1,4,3}), 2); //10, 2, 6, 3, 12
+        assertEquals(t.solution(new int[]{4,6,2,-1,4,3}), 2); //10, 2, 6, 3, 12
     }
     @Test
     public void testExample4(){
         TapeEquilibrium t = new TapeEquilibrium();
-        Assert.assertEquals(t.solution(new int[]{-10, -5, -3, -4, -5}), 3); //7, 3, 9, 19
+        assertEquals(t.solution(new int[]{-10, -5, -3, -4, -5}), 3); //7, 3, 9, 19
     }
     @Test
     public void testALimists(){
         TapeEquilibrium t = new TapeEquilibrium();
-        Assert.assertEquals(t.solution(new int[]{-1000,1000}), 2000);
-        Assert.assertEquals(t.solution(new int[]{1000,-1000}), 2000);
+        assertEquals(t.solution(new int[]{-1000,1000}), 2000);
+        assertEquals(t.solution(new int[]{1000,-1000}), 2000);
     }
 
     @Test
     public void testZero(){
         TapeEquilibrium t = new TapeEquilibrium();
-        Assert.assertEquals(t.solution(new int[]{-1000,-1000}), 0);
-        Assert.assertEquals(t.solution(new int[]{1000,1000}), 0);
+        assertEquals(t.solution(new int[]{-1000,-1000}), 0);
+        assertEquals(t.solution(new int[]{1000,1000}), 0);
     }
 }

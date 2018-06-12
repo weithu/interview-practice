@@ -1,7 +1,8 @@
 package leet.problems.countandsay;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class CountAndSay {
     /**
@@ -73,12 +74,12 @@ public class CountAndSay {
     @Test
     public void example1Test(){
         CountAndSay cas = new CountAndSay();
-        Assert.assertEquals(cas.countAndSay(1), "1");
+        assertEquals(cas.countAndSay(1), "1");
     }
 
     @Test
     public void example2Test(){
         CountAndSay cas = new CountAndSay();
-        Assert.assertEquals(cas.countAndSay(4), "1211");
+        assertEquals(cas.countAndSay(4), "1211");
     }
 }

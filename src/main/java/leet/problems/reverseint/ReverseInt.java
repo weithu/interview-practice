@@ -1,7 +1,8 @@
 package leet.problems.reverseint;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class ReverseInt {
 
@@ -42,13 +43,13 @@ public class ReverseInt {
     @Test
     public void testReverseInt(){
         ReverseInt r = new ReverseInt();
-        Assert.assertEquals(r.reverse(123), 321);
+        assertEquals(r.reverse(123), 321);
 
     }
     @Test
     public void testReverseIntNeg(){
         ReverseInt r = new ReverseInt();
-        Assert.assertEquals(r.reverse(-123), -321);
+        assertEquals(r.reverse(-123), -321);
     }
     @Test
     public void testReverseMaxNeg(){
@@ -56,7 +57,7 @@ public class ReverseInt {
 //        long lx = l * -1;
 //        System.out.println(lx);
         ReverseInt r = new ReverseInt();
-        Assert.assertEquals(r.reverse(-2147483648), 0);
+        assertEquals(r.reverse(-2147483648), 0);
     }
 }
 

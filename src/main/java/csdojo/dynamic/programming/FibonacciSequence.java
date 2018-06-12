@@ -2,7 +2,8 @@ package csdojo.dynamic.programming;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.testng.Assert;
+
+import static org.junit.Assert.*;
 
 public class FibonacciSequence {
     public int fib(int n){
@@ -18,26 +19,26 @@ public class FibonacciSequence {
 
     @Test
     public void testFib1(){
-        Assert.assertEquals(fs.fib(1), 1);
+        assertEquals(fs.fib(1), 1);
     }
     @Test
     public void testFib2(){
-        Assert.assertEquals(fs.fib(2), 1);
+        assertEquals(fs.fib(2), 1);
     }
     @Test
     public void testFib3(){
-        Assert.assertEquals(fs.fib(3), 2);
+        assertEquals(fs.fib(3), 2);
     }
     @Test
     public void testFib4(){
-        Assert.assertEquals(fs.fib(4), 3);
+        assertEquals(fs.fib(4), 3);
     }
     @Test
     public void testFib10(){
-        Assert.assertEquals(fs.fib(10), 55);
+        assertEquals(fs.fib(10), 55);
     }
     @Test
     public void testFib20(){
-        Assert.assertEquals(fs.fib(20), 6765);
+        assertEquals(fs.fib(20), 6765);
     }
 }

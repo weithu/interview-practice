@@ -1,7 +1,8 @@
 package codility.lesson3;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class FrogJmp {
     /**
@@ -47,21 +48,21 @@ public class FrogJmp {
     @Test
     public void testExample(){
         FrogJmp f = new FrogJmp();
-        Assert.assertEquals(f.solution(10,85,30), 3);
+        assertEquals(f.solution(10,85,30), 3);
     }
     @Test
     public void testExampleNoJump(){
         FrogJmp f = new FrogJmp();
-        Assert.assertEquals(f.solution(10,10,30), 0);
+        assertEquals(f.solution(10,10,30), 0);
     }
     @Test
     public void testExampleExact(){
         FrogJmp f = new FrogJmp();
-        Assert.assertEquals(f.solution(10,40,30), 1);
+        assertEquals(f.solution(10,40,30), 1);
     }
     @Test
     public void testExampleAdditionPartialJump(){
         FrogJmp f = new FrogJmp();
-        Assert.assertEquals(f.solution(10,42,30), 2);
+        assertEquals(f.solution(10,42,30), 2);
     }
 }

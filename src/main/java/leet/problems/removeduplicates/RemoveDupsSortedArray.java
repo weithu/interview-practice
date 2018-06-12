@@ -1,7 +1,8 @@
 package leet.problems.removeduplicates;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class RemoveDupsSortedArray {
     /**
@@ -61,7 +62,7 @@ public class RemoveDupsSortedArray {
         System.out.println("before:");
         for(int j: i)
             System.out.print(j);
-        Assert.assertEquals(r.removeDuplicates(i), 2);
+        assertEquals(r.removeDuplicates(i), 2);
         System.out.println("\nafter:");
         for(int j: i)
             System.out.print(j);
@@ -76,7 +77,7 @@ public class RemoveDupsSortedArray {
         System.out.println("before:");
         for(int j: i)
             System.out.print(j);
-        Assert.assertEquals(r.removeDuplicates(i), 5);
+        assertEquals(r.removeDuplicates(i), 5);
         System.out.println("\nafter:");
         for(int j: i)
             System.out.print(j);
